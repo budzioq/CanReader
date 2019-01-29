@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="CanReader.exe"/>
+    <OBJFILES value="CanReader.obj Can.obj Menager.obj IdFind.obj CanSpeedSelect.obj 
+      LineSelection.obj Info.obj AddDes.obj Logi.obj"/>
+    <RESFILES value="CanReader.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Can.dfm Menager.dfm IdFind.dfm CanSpeedSelect.dfm 
+      LineSelection.dfm Info.dfm AddDes.dfm Logi.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vcldb.lib bcb97axserver.lib vclx.lib CPortLibCB6.lib dsnapcon.lib 
+      dsnap.lib dbrtl.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib dsnap.lib dsnapcon.lib CPortLibCB6.lib vclx.lib 
+      bcb97axserver.lib vcldb.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb97axserver.bpi CPortLibCB6.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="CanReader.cpp"/>
+    <INCLUDEPATH value="..\Can2;&quot;..\Can sniffer&quot;;&quot;..\Can sniffer\Kopia&quot;;Kopia;..;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\ComPort"/>
+    <LIBPATH value="..\Can2;&quot;..\Can sniffer&quot;;&quot;..\Can sniffer\Kopia&quot;;Kopia;..;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\ComPort"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\Can2 -I&quot;..\Can sniffer&quot; -I&quot;..\Can sniffer\Kopia&quot; -IKopia -I.. 
+      -I$(BCB)\Projects -I$(BCB)\Projects\Can -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I$(BCB)\ComPort -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -c- -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="CanReader.res" FORMNAME="" UNITNAME="CanReader.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CanReader.cpp" FORMNAME="" UNITNAME="CanReader" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Can.cpp" FORMNAME="Form1" UNITNAME="Can" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Menager.cpp" FORMNAME="Form2" UNITNAME="Menager" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IdFind.cpp" FORMNAME="Form3" UNITNAME="IdFind" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CanSpeedSelect.cpp" FORMNAME="Form4" UNITNAME="CanSpeedSelect" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LineSelection.cpp" FORMNAME="Form5" UNITNAME="LineSelection" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Info.cpp" FORMNAME="Form6" UNITNAME="Info" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AddDes.cpp" FORMNAME="Form7" UNITNAME="AddDes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Logi.cpp" FORMNAME="Form8" UNITNAME="Logi" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+g:\buldier\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=7
+Item0=..\Can2;..\Can sniffer;..\Can sniffer\Kopia;Kopia;..;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\ComPort
+Item1=..\Can sniffer;..\Can sniffer\Kopia;Kopia;..;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\ComPort
+Item2=..\Can sniffer;..\Can sniffer\Kopia;Kopia;..;G:\Programy\Can sniffer;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\ComPort
+Item3=..\Can sniffer\Kopia;Kopia;..;G:\Programy\Can sniffer;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\ComPort
+Item4=Kopia;..;G:\Programy\Can sniffer;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\ComPort
+Item5=$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\ComPort
+Item6=$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=7
+Item0=..\Can2;..\Can sniffer;..\Can sniffer\Kopia;Kopia;..;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\ComPort
+Item1=..\Can sniffer;..\Can sniffer\Kopia;Kopia;..;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\ComPort
+Item2=..\Can sniffer;..\Can sniffer\Kopia;Kopia;..;G:\Programy\Can sniffer;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\ComPort
+Item3=..\Can sniffer\Kopia;Kopia;..;G:\Programy\Can sniffer;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\ComPort
+Item4=Kopia;..;G:\Programy\Can sniffer;$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\ComPort
+Item5=$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\ComPort
+Item6=$(BCB)\Projects;$(BCB)\Projects\Can;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

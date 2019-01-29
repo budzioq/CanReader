@@ -1,0 +1,62 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Logi.h"
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm8 *Form8;
+//---------------------------------------------------------------------------
+__fastcall TForm8::TForm8(TComponent* Owner)
+        : TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm8::Button1Click(TObject *Sender)
+{
+    Edit1->Visible=false;
+    Button1->Visible=false;
+    Button2->Visible=true;
+    LogEvent=Edit1->Text;
+    if (Form1->LogStart()==1)
+    {
+    Form8->Close();
+    Button1->Visible=true;
+    Edit1->Visible=true;
+    Button2->Visible=false;
+    }
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm8::Button2Click(TObject *Sender)
+{
+Form8->Close();
+Form1->LogStop(LogEvent);
+Button1->Visible=true;
+Edit1->Visible=true;
+Button2->Visible=false;
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm8::Edit1KeyPress(TObject *Sender, char &Key)
+{
+ if (Key==VK_RETURN)
+ {
+ Button1Click(NULL);
+}        
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm8::FormKeyPress(TObject *Sender, char &Key)
+{
+ if (Button1->Visible==false && Edit1->Visible== false && Button2->Visible==true)
+{
+          if (Key==VK_RETURN)
+        {
+         Button2Click(NULL);
+        }
+}
+}
+//---------------------------------------------------------------------------
+

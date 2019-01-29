@@ -1,0 +1,51 @@
+object Form6: TForm6
+  Left = 1410
+  Top = 359
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsToolWindow
+  Caption = 'O programie'
+  ClientHeight = 237
+  ClientWidth = 503
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 16
+  object Informacje: TGroupBox
+    Left = 0
+    Top = 0
+    Width = 505
+    Height = 345
+    Caption = 'Informacje'
+    TabOrder = 0
+    object Info: TMemo
+      Left = 0
+      Top = 24
+      Width = 505
+      Height = 217
+      Color = clBtnFace
+      Enabled = False
+      Lines.Strings = (
+        ''
+        ''
+        '                                     CanReader 2018 v1.0'
+        ''
+        
+          '      Program umo'#380'liwia zczytywanie danych w pojazdach wyposa'#380'on' +
+          'ych w sie'#263' CAN.'
+        
+          'Wsp'#243#322'dzia'#322'a z adapterami CAN->COM w kt'#243'rych przesy'#322'ane wiadomo'#347'c' +
+          'i s'#261' w '
+        'formacie <ID,x,x,x,...>. Zmiana pr'#281'dko'#347'ci transmisji '
+        ''
+        'Autor - Zbigniew  Buda '
+        'budzioq@gmail.com')
+      TabOrder = 0
+      OnDblClick = InfoDblClick
+    end
+  end
+end
